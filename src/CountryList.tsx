@@ -94,9 +94,9 @@ const CountryItem = (props: CountryItemProps) => {
   const {
     country,
     onSelect,
-    withFlag,
+    withFlag = true,
     withEmoji,
-    withCallingCode,
+    withCallingCode = false,
     withCurrency,
   } = props
   const extraContent: string[] = []
@@ -135,10 +135,6 @@ const CountryItem = (props: CountryItemProps) => {
       </View>
     </TouchableOpacity>
   )
-}
-CountryItem.defaultProps = {
-  withFlag: true,
-  withCallingCode: false,
 }
 const MemoCountryItem = memo<CountryItemProps>(CountryItem)
 
@@ -255,8 +251,4 @@ export const CountryList = (props: CountryListProps) => {
       )}
     </View>
   )
-}
-
-CountryList.defaultProps = {
-  filterFocus: undefined,
 }

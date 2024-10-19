@@ -13,14 +13,17 @@ const styles = StyleSheet.create({
 
 export const CountryModal = ({
   children,
-  withModal,
-  disableNativeModal,
-  ...props
+  withModal = true,
+  disableNativeModal = false,
+  animated = true,
+  animationType = 'slide',
+  ...rest
 }: ModalProps & {
   children: React.ReactNode
   withModal?: boolean
   disableNativeModal?: boolean
 }) => {
+  const props = { animationType, animated, ...rest }
   const { backgroundColor } = useTheme()
   const { teleport } = React.useContext(CountryModalContext)
   const content = (
@@ -45,9 +48,3 @@ export const CountryModal = ({
   return content
 }
 
-CountryModal.defaultProps = {
-  animationType: 'slide',
-  animated: true,
-  withModal: true,
-  disableNativeModal: false,
-}
