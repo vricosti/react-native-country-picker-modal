@@ -119,7 +119,7 @@ export interface FlagButtonProps {
   containerButtonStyle?: StyleProp<ViewStyle>
   countryCode?: CountryCode
   placeholder: string
-  onOpen?(): void
+  onOpen?: () => void
 }
 
 export const FlagButton = ({

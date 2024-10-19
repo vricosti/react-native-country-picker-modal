@@ -22,7 +22,7 @@ interface HeaderModalProps {
   closeButtonImage?: ImageSourcePropType
   closeButtonStyle?: StyleProp<ViewStyle>
   closeButtonImageStyle?: StyleProp<ImageStyle>
-  onClose(): void
+  onClose: () => void
   renderFilter(props: HeaderModalProps): ReactNode
 }
 export const HeaderModal = (props: HeaderModalProps) => {

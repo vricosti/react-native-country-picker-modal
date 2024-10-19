@@ -31,7 +31,7 @@ interface CloseButtonProps {
   style?: StyleProp<ViewStyle>
   imageStyle?: StyleProp<ImageStyle>
   image?: ImageSourcePropType
-  onPress?(): void
+  onPress?: () => void
 }
 
 const CloseButtonAndroid: React.FC<CloseButtonProps> = (props) => {

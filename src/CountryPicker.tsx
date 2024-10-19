@@ -83,8 +83,8 @@ interface CountryPickerProps {
     props: React.ComponentProps<typeof CountryFilter>,
   ): ReactNode
   onSelect(country: Country): void
-  onOpen?(): void
-  onClose?(): void
+  onOpen?: () => void
+  onClose?: () => void
 }
 
 export const CountryPicker = (props: CountryPickerProps) => {

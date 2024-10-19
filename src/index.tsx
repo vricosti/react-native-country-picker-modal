@@ -45,8 +45,8 @@ interface Props {
   renderFlagButton?(props: FlagButtonProps): ReactNode
   renderCountryFilter?(props: CountryFilterProps): ReactNode
   onSelect(country: Country): void
-  onOpen?(): void
-  onClose?(): void
+  onOpen?: () => void
+  onClose?: () => void
 }
 
 const Main = ({ theme, translation, ...props }: Props) => {
