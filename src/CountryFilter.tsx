@@ -21,7 +21,7 @@ export type CountryFilterProps = TextInputProps
 export const CountryFilter = ({
   autoFocus = false,
   placeholder = 'Enter country name',
-  ...props
+  ...rest
 }: CountryFilterProps) => {
   const {
     filterPlaceholderTextColor,
@@ -29,6 +29,13 @@ export const CountryFilter = ({
     fontSize,
     onBackgroundTextColor,
   } = useTheme()
+
+  const props = {
+    autoFocus,
+    placeholder,
+    ...rest,
+  }
+
   return (
     <TextInput
       testID='text-input-country-filter'
