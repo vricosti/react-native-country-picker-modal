@@ -28,7 +28,7 @@ interface HeaderModalProps {
 export const HeaderModal = (props: HeaderModalProps) => {
   const {
     withFilter,
-    withCloseButton,
+    withCloseButton = true,
     closeButtonImage,
     closeButtonStyle,
     closeButtonImageStyle,
@@ -48,8 +48,4 @@ export const HeaderModal = (props: HeaderModalProps) => {
       {withFilter && renderFilter(props)}
     </View>
   )
-}
-
-HeaderModal.defaultProps = {
-  withCloseButton: true,
 }

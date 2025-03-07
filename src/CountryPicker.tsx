@@ -89,7 +89,7 @@ interface CountryPickerProps {
 
 export const CountryPicker = (props: CountryPickerProps) => {
   const {
-    allowFontScaling,
+    allowFontScaling = true,
     countryCode,
     region,
     subregion,
@@ -107,11 +107,11 @@ export const CountryPicker = (props: CountryPickerProps) => {
     withCallingCodeButton,
     withCurrencyButton,
     containerButtonStyle,
-    withAlphaFilter,
-    withCallingCode,
+    withAlphaFilter= false,
+    withCallingCode= false,
     withCurrency,
     withFlag,
-    withModal,
+    withModal= true,
     disableNativeModal,
     withFlagButton,
     onClose: handleClose,
@@ -120,7 +120,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
     closeButtonStyle,
     closeButtonImageStyle,
     excludeCountries,
-    placeholder,
+    placeholder = 'Select Country',
     preferredCountries,
   } = props
   const [state, setState] = useState<State>({
@@ -244,10 +244,3 @@ export const CountryPicker = (props: CountryPickerProps) => {
   )
 }
 
-CountryPicker.defaultProps = {
-  withModal: true,
-  withAlphaFilter: false,
-  withCallingCode: false,
-  placeholder: 'Select Country',
-  allowFontScaling: true,
-}
