@@ -1,18 +1,18 @@
 {
-  "name": "react-native-country-picker-modal",
-  "version": "2.0.0",
+  "name": "@vricosti/react-native-country-picker-modal",
+  "version": "2.0.1",
   "description": "react-native country picker",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xcarpentier/react-native-country-picker-modal.git"
+    "url": "git+https://github.com/vricosti/react-native-country-picker-modal.git"
   },
   "scripts": {
     "start": "yarn config:dev && expo start",
     "start:web": "yarn config:dev && expo start -w --dev",
     "tsc": "node_modules/.bin/tsc --noEmit",
-    "build": "rm -rf lib/ && node_modules/.bin/tsc && mkdir ./lib && cp -rf ./src/assets ./lib/assets && yarn minify",
+    "build": "rm -rf lib/ && node_modules/.bin/tsc && mkdir -p ./lib && cp -rf ./src/assets ./lib/assets && cp -f ./README.md ./lib/ && cp -f ./package.json ./lib/ && yarn minify",
     "minify": "yarn minify:emoji",
     "minify:emoji": "./scripts/minify.js ./lib/assets/data/countries-emoji.json",
     "config:dev": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'",
@@ -39,13 +39,19 @@
     "flag"
   ],
   "author": "Xavier Carpentier <xcapetir@gmail.com> (https://xaviercarpentier.com/)",
+  "contributors": [
+    {
+      "name": "Vince Ricosti"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xcarpentier/react-native-country-picker-modal/issues"
+    "url": "https://github.com/vricosti/react-native-country-picker-modal/issues"
   },
-  "homepage": "http://xcarpentier.github.io/react-native-country-picker-modal",
+  "homepage": "https://github.com/vricosti/react-native-country-picker-modal#readme",
   "dependencies": {
     "@callstack/react-theme-provider": "3.0.9",
+    "@expo/webpack-config": "^19.0.0",
     "fuse.js": "3.4.5",
     "node-emoji": "1.11.0",
     "react-async-hook": "4.0.0"

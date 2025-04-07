@@ -45,8 +45,6 @@ export const CountryFilter = ({
         styles.input,
         { fontFamily, fontSize, color: onBackgroundTextColor },
       ]}
-      placeholder={placeholder}
-      autoFocus={autoFocus}
       {...props}
     />
   )

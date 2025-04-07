@@ -35,7 +35,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   root: true,
-  ignorePatterns: ['.eslintrc.js', '*.test.tsx', '*.config.js'],
+  ignorePatterns: ['.eslintrc.js', '*.test.tsx', '*.config.js','App.tsx', 'App.d.ts', 'App.js', 'typings.d.ts'],
   rules: {
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
