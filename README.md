@@ -21,7 +21,7 @@
 ## Installation
 
 ```bash
-$ yarn add react-native-country-picker-modal
+$ yarn add @vricosti/react-native-country-picker-modal
 ```
 
 ## Basic Usage
