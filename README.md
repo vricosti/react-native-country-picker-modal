@@ -184,13 +184,13 @@ YES : It used the world-countries package and image is stored into json and base
 
 ## Questions
 
-Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/xcarpentier/react-native-country-picker/issues/new)
+Feel free to [contact me](mailto:contact@xaviercarpentier.com) or [create an issue](https://github.com/vricosti/react-native-country-picker/issues/new)
 
 > made with ♥
 
 ## Licence
 
-[MIT](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/LICENSE.md)
+[MIT](https://github.com/vricosti/react-native-country-picker-modal/blob/master/LICENSE.md)
 
 ## Hire an expert!
 
